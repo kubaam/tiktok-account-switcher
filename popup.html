@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <title>TikTok Account Switcher</title>
+  <style>
+    body { width: 300px; margin: 0; padding: 12px; font: 13px system-ui, sans-serif; background: #121212; color: #eee; }
+    h1 { font-size: 15px; margin: 0 0 10px; }
+    ul { list-style: none; padding: 0; margin: 0 0 12px; }
+    li { display: flex; align-items: center; gap: 6px; padding: 6px 8px; border-radius: 6px; background: #1e1e1e; margin-bottom: 4px; }
+    li.active { outline: 1px solid #fe2c55; }
+    li .name { flex: 1; cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    li .name:hover { color: #25f4ee; }
+    button { background: #2a2a2a; color: #eee; border: 0; border-radius: 6px; padding: 6px 10px; cursor: pointer; }
+    button:hover { background: #3a3a3a; }
+    button.primary { background: #fe2c55; }
+    .row { display: flex; gap: 6px; margin-bottom: 6px; }
+    input { flex: 1; background: #1e1e1e; color: #eee; border: 1px solid #333; border-radius: 6px; padding: 6px; }
+    #status { min-height: 16px; font-size: 12px; color: #aaa; }
+    #status.error { color: #ff6b6b; }
+    .empty { color: #888; margin-bottom: 12px; }
+  </style>
+</head>
+<body>
+  <h1>TikTok účty</h1>
+  <ul id="list"></ul>
+  <div class="row">
+    <input id="name" placeholder="Jméno (prázdné = auto @nick)" maxlength="60">
+    <button id="save" class="primary">Uložit</button>
+  </div>
+  <div class="row">
+    <button id="add">+ Přihlásit další účet</button>
+  </div>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
