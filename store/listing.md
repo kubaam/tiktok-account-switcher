@@ -25,4 +25,4 @@ TikTok Account Switcher lets you keep several of your own TikTok accounts logged
 
 **Data usage:** Collects "Authentication information" (session cookies) — stored locally only, not sold, not transferred, used only for the single purpose.
 
-**Privacy policy URL:** https://<github-user>.github.io/tiktok-account-switcher/PRIVACY
+**Privacy policy URL:** https://kubaam.github.io/tiktok-account-switcher/PRIVACY
